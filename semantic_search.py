@@ -54,7 +54,7 @@ print(f"        first 5 numbers: {sample_vector[:5]}")
 
 # 4. STORE: chunks + vectors go into a vector store.
 #    In-memory for now; Part 2 swaps this for Chroma.
-vector_store = InMemoryVectorStore(embeddings)
+vector_store = InMemoryVectorStore(embeddings) 
 ids = vector_store.add_documents(documents=all_splits)
 print(f"[store] {len(ids)} chunks stored")
 
