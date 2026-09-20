@@ -102,6 +102,8 @@ for query in queries:
 # ---------------------------------------------------------------
 # METADATA FILTER: search only chunks whose metadata matches.
 # This is something a plain numpy search doesn't give you for free.
+# filter={"page": 26} -> means among the chunks filter them and give me whose metadata shows page 26
+# start=1 means start the ranking from 1 else it will start it from 0
 # ---------------------------------------------------------------
 print("\n" + "=" * 70)
 print("FILTERED QUERY (page 26 only): distribution centers")
