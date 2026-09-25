@@ -1,0 +1,1470 @@
+{
+  "summary": {
+    "number_of_questions": 50,
+    "in_corpus_questions": 46,
+    "out_of_scope_questions": 4,
+    "k": 5,
+    "paper_hit_at_5": 0.9565217391304348,
+    "page_hit_at_5": 0.3695652173913043,
+    "mrr": 0.907608695652174,
+    "refusal_rate": 1.0,
+    "false_refusal_rate": 0.0,
+    "model": "llama3.2:3b"
+  },
+  "results": [
+    {
+      "id": "D01",
+      "question": "What is the main connectivity idea introduced by DenseNet?",
+      "type": "direct",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        7,
+        7,
+        3,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D02",
+      "question": "What advantages do DenseNets obtain from their dense connectivity pattern?",
+      "type": "direct",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        7,
+        7,
+        6,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D03",
+      "question": "How does DenseNet combine feature maps from preceding layers?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        8,
+        3,
+        8,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D04",
+      "question": "Why can DenseNet require fewer parameters than traditional feed-forward architectures?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        6,
+        7,
+        7,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D05",
+      "question": "How do dense connections improve the flow of information and gradients during training?",
+      "type": "direct",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        8,
+        7,
+        2,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D06",
+      "question": "What is the purpose of transition layers between DenseNet dense blocks?",
+      "type": "direct",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        3
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        8,
+        3,
+        8,
+        8,
+        6
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "D07",
+      "question": "What role do bottleneck and compression layers play in DenseNet-BC?",
+      "type": "direct",
+      "expected_sources": [
+        "Dense_Net.pdf"
+      ],
+      "expected_pages": [
+        4,
+        5
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        7,
+        3,
+        7,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E01",
+      "question": "What problem does EfficientNet identify with conventional ConvNet scaling?",
+      "type": "direct",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        1,
+        5,
+        4,
+        6,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E02",
+      "question": "What three dimensions are jointly scaled by EfficientNet's compound scaling method?",
+      "type": "direct",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        5,
+        1,
+        8,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E03",
+      "question": "How are the depth, width, and resolution scaling coefficients determined?",
+      "type": "direct",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "integrated_axiomatic.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        8,
+        7,
+        3,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E04",
+      "question": "Why does EfficientNet argue that depth, width, and image resolution should be scaled together?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        8,
+        4,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E05",
+      "question": "What efficiency improvements does EfficientNet-B7 achieve compared with GPipe according to the paper?",
+      "type": "direct",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        6,
+        8,
+        6,
+        6
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E06",
+      "question": "How does EfficientNet-B4 compare with ResNet-50 in ImageNet accuracy and FLOPS?",
+      "type": "direct",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Efficient_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        6,
+        6,
+        8,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "E07",
+      "question": "What is the relationship between the EfficientNet baseline network and the EfficientNet model family?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        2,
+        3
+      ],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Efficient_Net.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        6,
+        8,
+        8,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G01",
+      "question": "What is Grad-CAM designed to produce?",
+      "type": "direct",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        5,
+        4,
+        8,
+        6,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G02",
+      "question": "What information does Grad-CAM use to generate its localization map?",
+      "type": "direct",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        8,
+        6,
+        4,
+        5,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G03",
+      "question": "What does a Grad-CAM heatmap indicate about an image?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        6,
+        6,
+        5,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G04",
+      "question": "Why is Grad-CAM applicable to CNNs with fully connected layers?",
+      "type": "direct",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        5,
+        5,
+        4,
+        4,
+        15
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G05",
+      "question": "What are the two properties of a good visual explanation identified by the paper?",
+      "type": "direct",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "LIME.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        8,
+        23,
+        5,
+        6
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "G06",
+      "question": "How does Guided Grad-CAM combine Grad-CAM with pixel-space visualizations?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        5,
+        4,
+        8,
+        6,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "G07",
+      "question": "What does the paper report about Grad-CAM's localization performance compared with other visualization methods?",
+      "type": "direct",
+      "expected_sources": [
+        "Grad_CAM.pdf"
+      ],
+      "expected_pages": [
+        7
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf"
+      ],
+      "retrieved_pages": [
+        8,
+        6,
+        4,
+        14,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I01",
+      "question": "What is the attribution problem studied by Integrated Gradients?",
+      "type": "direct",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        4,
+        1,
+        2,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I02",
+      "question": "What are the two fundamental axioms proposed in the paper?",
+      "type": "direct",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        9,
+        8,
+        10,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I03",
+      "question": "What is the Sensitivity axiom?",
+      "type": "direct",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "LIME.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        3,
+        3,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I04",
+      "question": "Why can ordinary gradients violate Sensitivity?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        2,
+        3,
+        2,
+        10
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I05",
+      "question": "What does Implementation Invariance require?",
+      "type": "direct",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "LIME.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I06",
+      "question": "Why is a baseline input needed for attribution?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        4,
+        11,
+        2,
+        10
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "I07",
+      "question": "What kinds of applications does the paper demonstrate for Integrated Gradients?",
+      "type": "direct",
+      "expected_sources": [
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1,
+        6,
+        7
+      ],
+      "retrieved_sources": [
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        3,
+        4,
+        5,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L01",
+      "question": "What problem is LIME designed to address?",
+      "type": "direct",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        9,
+        6,
+        7,
+        4,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L02",
+      "question": "How does LIME explain an individual prediction?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        7,
+        6,
+        3,
+        9
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L03",
+      "question": "What does it mean for LIME to learn an interpretable model locally around a prediction?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        9,
+        9,
+        3,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L04",
+      "question": "What is SP-LIME and what problem does it address?",
+      "type": "direct",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        4,
+        9,
+        6,
+        6,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L05",
+      "question": "Why does the paper distinguish between trusting an individual prediction and trusting a model?",
+      "type": "direct",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        1,
+        1,
+        7,
+        9,
+        6
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L06",
+      "question": "How can explanations help identify problems such as data leakage or dataset shift?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        2
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        2,
+        14,
+        1,
+        2,
+        1
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "L07",
+      "question": "What does the paper report about using LIME to understand image-classification predictions?",
+      "type": "direct",
+      "expected_sources": [
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        4,
+        6,
+        9,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "N01",
+      "question": "What dataset is used in the NGNDAI-2026 study, and how many image patches does it contain?",
+      "type": "direct",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        4
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        10,
+        3,
+        9,
+        13,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "N02",
+      "question": "What nine tissue classes are considered in the study?",
+      "type": "direct",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        4
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        5,
+        6,
+        10,
+        1,
+        4
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "N03",
+      "question": "What train/validation/test split is used, and what random seed is specified?",
+      "type": "direct",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        4
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "LIME.pdf",
+        "Dense_Net.pdf",
+        "Efficient_Net.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        7,
+        5,
+        8,
+        4
+      ],
+      "paper_hit_at_k": false,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "N04",
+      "question": "How are DenseNet-121 and EfficientNet-B5 initialized and trained in the two phases?",
+      "type": "direct",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        5
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        5,
+        7,
+        7,
+        3
+      ],
+      "paper_hit_at_k": false,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "N05",
+      "question": "What are XCS, GLAS, and LIME Stability intended to measure?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        3,
+        12
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        13,
+        2,
+        4,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "N06",
+      "question": "What does the study report about DenseNet-121 and EfficientNet-B5 test accuracy?",
+      "type": "direct",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        1,
+        8,
+        9
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "Efficient_Net.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Efficient_Net.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        8,
+        6,
+        6,
+        6,
+        7
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "N07",
+      "question": "What does the TUM true-positive, false-positive, and false-negative analysis show about explanation localization?",
+      "type": "paraphrased",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "expected_pages": [
+        9,
+        10,
+        11
+      ],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        3,
+        3,
+        3,
+        14,
+        3
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.25
+    },
+    {
+      "id": "X01",
+      "question": "How does DenseNet's feature connectivity differ from EfficientNet's approach to improving model efficiency?",
+      "type": "cross-paper",
+      "expected_sources": [
+        "Dense_Net.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        7,
+        4,
+        7,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "X02",
+      "question": "How do Grad-CAM, LIME, and Integrated Gradients differ in the type of explanation they provide?",
+      "type": "cross-paper",
+      "expected_sources": [
+        "Grad_CAM.pdf",
+        "LIME.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "integrated_axiomatic.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        5,
+        6,
+        6,
+        4,
+        12
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "X03",
+      "question": "How does the NGNDAI-2026 paper use DenseNet, EfficientNet, Grad-CAM, LIME, and Integrated Gradients together?",
+      "type": "cross-paper",
+      "expected_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "Dense_Net.pdf",
+        "Efficient_Net.pdf",
+        "Grad_CAM.pdf",
+        "LIME.pdf",
+        "integrated_axiomatic.pdf"
+      ],
+      "expected_pages": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "Dense_Net.pdf",
+        "Dense_Net.pdf"
+      ],
+      "retrieved_pages": [
+        12,
+        11,
+        3,
+        6,
+        5
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": true,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "X04",
+      "question": "What is the conceptual difference between Grad-CAM's spatial activation approach and LIME's local surrogate approach?",
+      "type": "cross-paper",
+      "expected_sources": [
+        "Grad_CAM.pdf",
+        "LIME.pdf"
+      ],
+      "expected_pages": [
+        1,
+        2
+      ],
+      "retrieved_sources": [
+        "NGNDAI-2026_Paper_625.pdf",
+        "Grad_CAM.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        12,
+        6,
+        6,
+        6,
+        12
+      ],
+      "paper_hit_at_k": true,
+      "page_hit_at_k": false,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "O01",
+      "question": "What is the capital of France?",
+      "type": "out-of-scope",
+      "expected_sources": [],
+      "expected_pages": [],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        23,
+        3,
+        4,
+        4,
+        11
+      ],
+      "answer": "I don't know based on the provided documents.",
+      "refused": true
+    },
+    {
+      "id": "O02",
+      "question": "How does Bitcoin mining work?",
+      "type": "out-of-scope",
+      "expected_sources": [],
+      "expected_pages": [],
+      "retrieved_sources": [
+        "LIME.pdf",
+        "Dense_Net.pdf",
+        "LIME.pdf",
+        "LIME.pdf",
+        "LIME.pdf"
+      ],
+      "retrieved_pages": [
+        8,
+        8,
+        8,
+        3,
+        4
+      ],
+      "answer": "I don't know based on the provided documents.",
+      "refused": true
+    },
+    {
+      "id": "O03",
+      "question": "Who won the 2022 FIFA World Cup?",
+      "type": "out-of-scope",
+      "expected_sources": [],
+      "expected_pages": [],
+      "retrieved_sources": [
+        "Grad_CAM.pdf",
+        "Grad_CAM.pdf",
+        "NGNDAI-2026_Paper_625.pdf",
+        "LIME.pdf",
+        "NGNDAI-2026_Paper_625.pdf"
+      ],
+      "retrieved_pages": [
+        7,
+        22,
+        13,
+        6,
+        14
+      ],
+      "answer": "I don't know based on the provided documents.",
+      "refused": true
+    },
+    {
+      "id": "O04",
+      "question": "What is the current stock price of NVIDIA?",
+      "type": "out-of-scope",
+      "expected_sources": [],
+      "expected_pages": [],
+      "retrieved_sources": [
+        "Efficient_Net.pdf",
+        "Grad_CAM.pdf",
+        "Efficient_Net.pdf",
+        "integrated_axiomatic.pdf",
+        "Efficient_Net.pdf"
+      ],
+      "retrieved_pages": [
+        6,
+        22,
+        2,
+        6,
+        6
+      ],
+      "answer": "I don't know based on the provided documents.",
+      "refused": true
+    }
+  ],
+  "rag_vs_no_context": [
+    {
+      "id": "D01",
+      "question": "What is the main connectivity idea introduced by DenseNet?",
+      "with_context": "The main connectivity idea introduced by DenseNet is dense connectivity, where any layer receives the feature-maps of all preceding layers as input (file, page 2).",
+      "without_context": "The main connectivity idea introduced by DenseNet is the use of dense connections, which are connections between any two layers in the network, not just the next layer in the sequence. This allows the network to capture long-range dependencies and relationships between different parts of the input data, which can lead to improved performance and robustness."
+    },
+    {
+      "id": "D02",
+      "question": "What advantages do DenseNets obtain from their dense connectivity pattern?",
+      "with_context": "According to CONTEXT 5 (file, page 3), DenseNets obtain the advantage of direct information flow between layers due to their dense connectivity pattern, where each layer receives the feature-maps of all preceding layers as input.",
+      "without_context": "DenseNets, also known as Dense Connection Networks, obtain several advantages from their dense connectivity pattern. Some of the key advantages include:\n\n1. **Reduced number of parameters**: By connecting every layer to every other layer, DenseNets reduce the number of parameters in the network, which can lead to faster training and better generalization.\n2. **Improved feature reuse**: The dense connectivity pattern allows features from earlier layers to be reused in later layers, which can help to capture long-range dependencies and improve the overall representation of the input data.\n3. **Increased robustness to vanishing gradients**: The dense connectivity pattern can help to mitigate the problem of vanishing gradients, which can occur when gradients are backpropagated through multiple layers. By connecting every layer to every other layer, the gradients can be propagated more efficiently, leading to better optimization.\n4. **Improved scalability**: DenseNets can be more scalable than traditional convolutional neural networks, as they can handle larger input images and more complex tasks without increasing the number of parameters.\n5. **Better performance on image classification tasks**: DenseNets have been shown to perform well on image classification tasks, such as ImageNet, due to their ability to capture long-range dependencies and reuse features.\n\nOverall, the dense connectivity pattern in DenseNets allows for more efficient propagation of gradients, improved feature reuse, and better scalability, leading to improved performance on a variety of tasks."
+    },
+    {
+      "id": "E02",
+      "question": "What three dimensions are jointly scaled by EfficientNet's compound scaling method?",
+      "with_context": "(e) resolution, width, and depth.",
+      "without_context": "The three dimensions that are jointly scaled by EfficientNet's compound scaling method are:\n\n1. Channels (number of filters in each layer)\n2. Depth (number of layers)\n3. Width (number of parameters in each layer)\n\nThis scaling method allows EfficientNet to efficiently scale up the network architecture while maintaining a consistent scaling factor across all dimensions."
+    },
+    {
+      "id": "G01",
+      "question": "What is Grad-CAM designed to produce?",
+      "with_context": "According to CONTEXT 2 [Grad_CAM.pdf, page 4], Grad-CAM is designed to produce a coarse localization (blue heatmap) that represents where the model has to look to make a particular decision, and when pointwise multiplied with guided backpropagation, it produces high-resolution and concept-specific visualizations.",
+      "without_context": "Grad-CAM (Gradient-weighted Class Activation Mapping) is a technique used in computer vision to visualize the importance of different regions in an image for a specific class or object. It is designed to produce a heatmap or a visual representation of the regions in an image that are most relevant to the class or object of interest.\n\nIn other words, Grad-CAM is used to identify the parts of an image that are most likely to be associated with a particular class or object, such as a person, car, or building. The heatmap produced by Grad-CAM can be used to highlight the most important regions in an image, which can be useful for tasks such as object detection, image classification, and image segmentation."
+    },
+    {
+      "id": "L01",
+      "question": "What problem is LIME designed to address?",
+      "with_context": "LIME is designed to address the problem of providing interpretable explanations for complex machine learning models, particularly in situations where the model's decision function is difficult to understand or interpret.",
+      "without_context": "LIME (Local Interpretable Model-agnostic Explanations) is a technique designed to address the problem of explaining the decisions made by machine learning models, particularly deep neural networks. The main goal of LIME is to provide a local, interpretable explanation for the predictions made by a model, which can help to understand how the model is making its decisions and identify potential biases or errors.\n\nLIME works by generating an interpretable model, often a linear model, that approximates the behavior of the original deep neural network on a specific input. This allows for a more transparent and explainable understanding of the model's decision-making process, which can be particularly useful in applications such as medical diagnosis, financial risk assessment, and autonomous vehicles, where model interpretability is crucial."
+    },
+    {
+      "id": "I02",
+      "question": "What are the two fundamental axioms proposed in the paper?",
+      "with_context": "According to CONTEXT 1 [integrated_axiomatic.pdf, page 4], the two fundamental axioms proposed in the paper are:\n\n1. Axiom: Sensitivity(b) (also called Dummy in (Friedman, 2004)) - If the function implemented by the deep network does not depend (mathematically) on some variable, then the attribution to that variable is always zero.\n2. Axiom: Linearity - Suppose that we linearly composed two deep networks modeled by the functions f1 and f2 to form a third network that models the function a×f1 + b×f2, i.e., a linear combination of the two networks. Then we’d like the attributions fora×f1 + b×f2 to be the weighted sum of the attributions for f1 and f2 with weights a and b respectively.",
+      "without_context": "I don't have any information about a specific paper. Could you please provide more context or details about the paper you're referring to? I'll do my best to help."
+    }
+  ]
+}

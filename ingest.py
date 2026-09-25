@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-data_dir = Path("/Users/ayushgupta/Desktop/AI/RAG-Project/data")
+data_dir = Path("papers")
 route = sorted(data_dir.glob("*.pdf"))
 docs=[]
 paths= []
