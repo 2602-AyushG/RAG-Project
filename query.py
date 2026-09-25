@@ -1,6 +1,7 @@
-import os
-import sys
+import argparse
 import json
+import sys
+import urllib.error
 import urllib.request
 
 from langchain_chroma import Chroma
@@ -13,6 +14,8 @@ PERSIST_DIR = "./chroma_db"
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 
 MODEL_NAME = "llama3.2:3b"
+OLLAMA_URL = "http://localhost:11434/api/generate"
+
 
 # Load existing Chroma database
 def load_db():
@@ -41,7 +44,6 @@ def build_prompt(query, chunks):
     context = ""
 
     for i, (doc, score) in enumerate(chunks, 1):
-
         source = doc.metadata.get("source", "unknown")
         page = doc.metadata.get("page", "unknown")
 
@@ -71,39 +73,8 @@ ANSWER:
     return prompt
 
 
-# Call OpenAI API
-# def call_llm(prompt):
-#     api_key = os.getenv("OPENAI_API_KEY")
-
-#     data = json.dumps({
-#         "model": MODEL_NAME,
-#         "temperature": 0,
-#         "messages": [
-#             {
-#                 "role": "user",
-#                 "content": prompt
-#             }
-#         ]
-#     }).encode("utf-8")
-
-#     request = urllib.request.Request(
-#         "https://api.openai.com/v1/chat/completions",
-#         data=data,
-#         headers={
-#             "Content-Type": "application/json",
-#             "Authorization": f"Bearer {api_key}"
-#         }
-#     )
-
-#     with urllib.request.urlopen(request) as response:
-#         result = json.loads(
-#             response.read().decode("utf-8")
-#         )
-
-#     return result["choices"][0]["message"]["content"]
-
+# Call local Ollama model
 def call_llm(prompt):
-
     data = json.dumps({
         "model": MODEL_NAME,
         "prompt": prompt,
@@ -114,19 +85,45 @@ def call_llm(prompt):
     }).encode("utf-8")
 
     request = urllib.request.Request(
-        "http://localhost:11434/api/generate",
+        OLLAMA_URL,
         data=data,
         headers={
             "Content-Type": "application/json"
         }
     )
 
-    with urllib.request.urlopen(request) as response:
-        result = json.loads(
-            response.read().decode("utf-8")
+    try:
+        with urllib.request.urlopen(request, timeout=120) as response:
+            result = json.loads(
+                response.read().decode("utf-8")
+            )
+
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError(
+            f"Ollama returned HTTP {exc.code}. "
+            f"Make sure the Ollama server and model are running."
+        ) from exc
+
+    except urllib.error.URLError as exc:
+        raise RuntimeError(
+            "Could not connect to Ollama at "
+            f"{OLLAMA_URL}. Start Ollama and make sure "
+            f"'{MODEL_NAME}' is available."
+        ) from exc
+
+    except TimeoutError as exc:
+        raise RuntimeError(
+            "Ollama took too long to respond. "
+            "Make sure the model is running and try again."
+        ) from exc
+
+    if "error" in result:
+        raise RuntimeError(
+            f"Ollama error: {result['error']}"
         )
 
     return result["response"]
+
 
 # Complete RAG pipeline
 def generate(db, query):
@@ -142,29 +139,46 @@ def generate(db, query):
     return answer, chunks
 
 
-# Run from command line
-if __name__ == "__main__":
-
-    query = " ".join(sys.argv[1:])
-
-    db = load_db()
-
-    answer, chunks = generate(
-        db,
-        query
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Query the research-paper RAG system."
     )
 
-    print("\n--- RETRIEVED CHUNKS ---")
+    parser.add_argument(
+        "query",
+        nargs="+",
+        help="Question to ask about the research papers."
+    )
 
-    for i, (doc, score) in enumerate(chunks, 1):
+    return parser.parse_args()
 
-        source = doc.metadata.get("source", "unknown")
-        page = doc.metadata.get("page", "unknown")
 
-        print(f"\n{i}. {source}, page {page}")
-        print(f"Score: {score:.4f}")
-        print(doc.page_content[:200])
+# Run from command line
+if __name__ == "__main__":
+    args = parse_args()
+    query = " ".join(args.query).strip()
 
-    print("\n--- FINAL ANSWER ---")
-    print(answer)
+    try:
+        db = load_db()
 
+        answer, chunks = generate(
+            db,
+            query
+        )
+
+        print("\n--- RETRIEVED CHUNKS ---")
+
+        for i, (doc, score) in enumerate(chunks, 1):
+            source = doc.metadata.get("source", "unknown")
+            page = doc.metadata.get("page", "unknown")
+
+            print(f"\n{i}. {source}, page {page}")
+            print(f"Score: {score:.4f}")
+            print(doc.page_content[:200])
+
+        print("\n--- FINAL ANSWER ---")
+        print(answer)
+
+    except RuntimeError as exc:
+        print(f"\nError: {exc}", file=sys.stderr)
+        sys.exit(1)
